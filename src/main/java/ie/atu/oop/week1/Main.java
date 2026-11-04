@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Workshop workshop = new Workshop();
-        int Regattempts,Accepted,Rejected;
+        int Regattempts,Accepted=0,Rejected=0;
         boolean running = true;
         HashSet<String> ID = new HashSet<>();
         while (running) {
@@ -24,6 +24,9 @@ public class Main {
             System.out.println("enter student IDs");
             for (int i=0;i<=Regattempts;i++) {
                 ID.add(input.nextLine());
+                if(Regattempts == capacity) {
+                    Regattempts ++;
+                }
 
             }
             System.out.printf("Workshop name: %s\n",workshopName);

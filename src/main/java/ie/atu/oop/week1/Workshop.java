@@ -16,6 +16,8 @@ public class Workshop {
         this.workshopName = "";
         this.capacity = 0;
         Set<String> ID = new HashSet<String>();
+        int Accepted,Rejeted;
+
     }
 
     public String getworkshopName(){
